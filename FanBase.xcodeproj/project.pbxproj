@@ -18,6 +18,7 @@
 		FF320F5228030CAD0073D9EE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F5128030CAD0073D9EE /* DataService.swift */; };
 		FF320F5428030D130073D9EE /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F5328030D130073D9EE /* Actor.swift */; };
 		FF320F5628030D780073D9EE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F5528030D780073D9EE /* Movie.swift */; };
+		FF320F58280346710073D9EE /* ActorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F57280346710073D9EE /* ActorVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FF320F5128030CAD0073D9EE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FF320F5328030D130073D9EE /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		FF320F5528030D780073D9EE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FF320F57280346710073D9EE /* ActorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				FF320F4A2802E7930073D9EE /* MoviesVC.swift */,
+				FF320F57280346710073D9EE /* ActorVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				FF320F5428030D130073D9EE /* Actor.swift in Sources */,
 				FF320F5228030CAD0073D9EE /* DataService.swift in Sources */,
 				FF320F4F2802E9AF0073D9EE /* ActorCell.swift in Sources */,
+				FF320F58280346710073D9EE /* ActorVC.swift in Sources */,
 				FF320F5628030D780073D9EE /* Movie.swift in Sources */,
 				FF320F4B2802E7930073D9EE /* MoviesVC.swift in Sources */,
 			);

@@ -112,11 +112,67 @@
                     <navigationItem key="navigationItem" title="Movies" id="z7R-C3-FCK"/>
                     <connections>
                         <outlet property="moviesTable" destination="tEd-ne-vhA" id="dfx-la-UQE"/>
+                        <segue destination="CnW-Iy-ONP" kind="show" id="cTa-RE-g4g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1898.4000000000001" y="79.610194902548727"/>
+        </scene>
+        <!--Emilia Clarke-->
+        <scene sceneID="0yd-yN-dev">
+            <objects>
+                <viewController id="CnW-Iy-ONP" customClass="ActorVC" customModule="FanBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U1O-8t-dO0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emilia Clarke" translatesAutoresizingMaskIntoConstraints="NO" id="1Vc-Z3-ktF">
+                                <rect key="frame" x="0.0" y="44" width="375" height="442"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="442" id="YWH-f0-Dac"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1999(23)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFx-zR-NFo">
+                                <rect key="frame" x="16" y="494" width="186" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ZqL-js-Ma8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JkP-fA-Sac">
+                                <rect key="frame" x="275" y="493" width="84" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="d3h-kr-Or9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IGf-Vj-6D5"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="1Vc-Z3-ktF" firstAttribute="leading" secondItem="IGf-Vj-6D5" secondAttribute="leading" id="Fls-oH-NTT"/>
+                            <constraint firstItem="gFx-zR-NFo" firstAttribute="leading" secondItem="IGf-Vj-6D5" secondAttribute="leading" constant="16" id="Mga-IE-0nT"/>
+                            <constraint firstItem="1Vc-Z3-ktF" firstAttribute="trailing" secondItem="IGf-Vj-6D5" secondAttribute="trailing" id="WFk-N0-tx2"/>
+                            <constraint firstItem="JkP-fA-Sac" firstAttribute="leading" secondItem="gFx-zR-NFo" secondAttribute="trailing" constant="73" id="gaH-Xu-828"/>
+                            <constraint firstItem="1Vc-Z3-ktF" firstAttribute="top" secondItem="IGf-Vj-6D5" secondAttribute="top" id="hzc-C0-z80"/>
+                            <constraint firstItem="JkP-fA-Sac" firstAttribute="top" secondItem="1Vc-Z3-ktF" secondAttribute="bottom" constant="7" id="kdi-uW-3FA"/>
+                            <constraint firstItem="IGf-Vj-6D5" firstAttribute="trailing" secondItem="JkP-fA-Sac" secondAttribute="trailing" constant="16" id="pXH-Qk-u6b"/>
+                            <constraint firstItem="gFx-zR-NFo" firstAttribute="top" secondItem="1Vc-Z3-ktF" secondAttribute="bottom" constant="8" id="u3D-x9-FWr"/>
+                            <constraint firstItem="IGf-Vj-6D5" firstAttribute="trailing" secondItem="gFx-zR-NFo" secondAttribute="trailing" constant="173" id="zFU-TD-1hf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Emilia Clarke" id="zMa-Ad-gie"/>
+                    <connections>
+                        <outlet property="age" destination="gFx-zR-NFo" id="4lY-Gy-cjQ"/>
+                        <outlet property="avatar" destination="1Vc-Z3-ktF" id="VgC-du-5j3"/>
+                        <outlet property="countryFlag" destination="JkP-fA-Sac" id="ANQ-L3-lGi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4N-T2-gNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2768.8000000000002" y="79.610194902548727"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCc-xC-wge">
@@ -147,6 +203,9 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
