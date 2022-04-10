@@ -20,6 +20,9 @@ class MovieCell: UITableViewCell {
         super.awakeFromNib()
         actorsCollection.dataSource = self
         actorsCollection.delegate = self
+        if let layout = actorsCollection.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

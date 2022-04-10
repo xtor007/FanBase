@@ -35,7 +35,7 @@ class DataService {
             Actor(name: "Margaret Qualley", age: 27, country: "United States", birthYear: 1994)
         ]),
         Movie(name: "Avengers: Infinity War", actors: [
-            Actor(name: "Robert Downey Jr.", age: 57, country: "United States", birthYear: 1965),
+            Actor(name: "Robert Downey Jr", age: 57, country: "United States", birthYear: 1965),
             Actor(name: "Chris Hemsworth", age: 38, country: "Australia", birthYear: 1983),
             Actor(name: "Mark Ruffalo", age: 54, country: "United States", birthYear: 1967),
             Actor(name: "Chris Evans", age: 40, country: "United States", birthYear: 1981),
@@ -73,7 +73,7 @@ class DataService {
             Actor(name: "Rebecca Hall", age: 39, country: "United Kingdom", birthYear: 1982),
             Actor(name: "Scarlett Johansson", age: 37, country: "United States", birthYear: 1984),
             Actor(name: "Javier Bardem", age: 53, country: "Spain", birthYear: 1969),
-            Actor(name: "Penélope Cruz", age: 47, country: "Spain", birthYear: 1974),
+            Actor(name: "Penelope Cruz", age: 47, country: "Spain", birthYear: 1974),
             Actor(name: "Chris Messina", age: 47, country: "United States", birthYear: 1974)
         ]),
         Movie(name: "Titanic", actors: [

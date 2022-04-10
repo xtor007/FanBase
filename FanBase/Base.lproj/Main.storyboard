@@ -19,9 +19,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tEd-ne-vhA">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <color key="separatorColor" systemColor="systemTealColor"/>
-                                <color key="sectionIndexColor" systemColor="labelColor"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemMintColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCellId" rowHeight="267" id="Nmg-wO-eTD" customClass="MovieCell" customModule="FanBase" customModuleProvider="target">
@@ -50,6 +50,10 @@
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emilia Clarke" translatesAutoresizingMaskIntoConstraints="NO" id="3rJ-aM-cNo">
                                                                         <rect key="frame" x="0.0" y="0.0" width="198" height="210"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="3rJ-aM-cNo" secondAttribute="height" multiplier="33:35" id="Js5-jr-Vau"/>
+                                                                            <constraint firstAttribute="height" constant="210" id="Uxc-fT-eRu"/>
+                                                                        </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Actor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1K-1l-4MZ">
                                                                         <rect key="frame" x="0.0" y="209" width="198" height="57"/>
