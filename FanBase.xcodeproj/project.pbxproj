@@ -15,6 +15,9 @@
 		FF320F4B2802E7930073D9EE /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F4A2802E7930073D9EE /* MoviesVC.swift */; };
 		FF320F4D2802E8D90073D9EE /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F4C2802E8D90073D9EE /* MovieCell.swift */; };
 		FF320F4F2802E9AF0073D9EE /* ActorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F4E2802E9AF0073D9EE /* ActorCell.swift */; };
+		FF320F5228030CAD0073D9EE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F5128030CAD0073D9EE /* DataService.swift */; };
+		FF320F5428030D130073D9EE /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F5328030D130073D9EE /* Actor.swift */; };
+		FF320F5628030D780073D9EE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F5528030D780073D9EE /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		FF320F4A2802E7930073D9EE /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
 		FF320F4C2802E8D90073D9EE /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FF320F4E2802E9AF0073D9EE /* ActorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCell.swift; sourceTree = "<group>"; };
+		FF320F5128030CAD0073D9EE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FF320F5328030D130073D9EE /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		FF320F5528030D780073D9EE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		FF320F322802E2C90073D9EE /* FanBase */ = {
 			isa = PBXGroup;
 			children = (
+				FF320F5028030C920073D9EE /* Services */,
 				FF320F492802E6E00073D9EE /* Controller */,
 				FF320F482802E6D90073D9EE /* Model */,
 				FF320F472802E6CF0073D9EE /* View */,
@@ -85,6 +92,8 @@
 		FF320F482802E6D90073D9EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF320F5328030D130073D9EE /* Actor.swift */,
+				FF320F5528030D780073D9EE /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +104,14 @@
 				FF320F4A2802E7930073D9EE /* MoviesVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF320F5028030C920073D9EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF320F5128030CAD0073D9EE /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +188,10 @@
 				FF320F342802E2C90073D9EE /* AppDelegate.swift in Sources */,
 				FF320F362802E2C90073D9EE /* SceneDelegate.swift in Sources */,
 				FF320F4D2802E8D90073D9EE /* MovieCell.swift in Sources */,
+				FF320F5428030D130073D9EE /* Actor.swift in Sources */,
+				FF320F5228030CAD0073D9EE /* DataService.swift in Sources */,
 				FF320F4F2802E9AF0073D9EE /* ActorCell.swift in Sources */,
+				FF320F5628030D780073D9EE /* Movie.swift in Sources */,
 				FF320F4B2802E7930073D9EE /* MoviesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
