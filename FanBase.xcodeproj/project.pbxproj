@@ -13,6 +13,8 @@
 		FF320F3D2802E2CF0073D9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF320F3C2802E2CF0073D9EE /* Assets.xcassets */; };
 		FF320F402802E2CF0073D9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF320F3E2802E2CF0073D9EE /* LaunchScreen.storyboard */; };
 		FF320F4B2802E7930073D9EE /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F4A2802E7930073D9EE /* MoviesVC.swift */; };
+		FF320F4D2802E8D90073D9EE /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F4C2802E8D90073D9EE /* MovieCell.swift */; };
+		FF320F4F2802E9AF0073D9EE /* ActorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF320F4E2802E9AF0073D9EE /* ActorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FF320F3F2802E2CF0073D9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF320F412802E2CF0073D9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF320F4A2802E7930073D9EE /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
+		FF320F4C2802E8D90073D9EE /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		FF320F4E2802E9AF0073D9EE /* ActorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 		FF320F472802E6CF0073D9EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF320F4C2802E8D90073D9EE /* MovieCell.swift */,
+				FF320F4E2802E9AF0073D9EE /* ActorCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 			files = (
 				FF320F342802E2C90073D9EE /* AppDelegate.swift in Sources */,
 				FF320F362802E2C90073D9EE /* SceneDelegate.swift in Sources */,
+				FF320F4D2802E8D90073D9EE /* MovieCell.swift in Sources */,
+				FF320F4F2802E9AF0073D9EE /* ActorCell.swift in Sources */,
 				FF320F4B2802E7930073D9EE /* MoviesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

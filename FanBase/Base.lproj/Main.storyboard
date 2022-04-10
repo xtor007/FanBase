@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +16,79 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tEd-ne-vhA">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="236" id="Nmg-wO-eTD" customClass="MovieCell" customModule="FanBase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="236"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nmg-wO-eTD" id="jyQ-y1-Ftf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lgC-VF-k6V">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DVc-Qv-LC9">
+                                                        <size key="itemSize" width="198" height="235"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EnY-4X-N1U" customClass="ActorCell" customModule="FanBase" customModuleProvider="target">
+                                                            <rect key="frame" x="88.5" y="0.0" width="198" height="235"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5Kp-S2-fEs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="198" height="235"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emilia Clarke" translatesAutoresizingMaskIntoConstraints="NO" id="3rJ-aM-cNo">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="198" height="208"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some Actor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1K-1l-4MZ">
+                                                                        <rect key="frame" x="0.0" y="209" width="198" height="21"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="3rJ-aM-cNo" secondAttribute="bottom" constant="27" id="6Jp-Ej-Fea"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="3rJ-aM-cNo" secondAttribute="trailing" id="Jta-7J-O8N"/>
+                                                                    <constraint firstItem="3rJ-aM-cNo" firstAttribute="top" secondItem="5Kp-S2-fEs" secondAttribute="top" id="Y4Z-Ob-2mK"/>
+                                                                    <constraint firstItem="3rJ-aM-cNo" firstAttribute="leading" secondItem="5Kp-S2-fEs" secondAttribute="leading" id="xxp-4o-T3j"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <color key="backgroundColor" systemColor="labelColor"/>
+                                                            <size key="customSize" width="198" height="235"/>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lgC-VF-k6V" firstAttribute="leading" secondItem="jyQ-y1-Ftf" secondAttribute="leading" id="6gq-Eb-265"/>
+                                                <constraint firstAttribute="trailing" secondItem="lgC-VF-k6V" secondAttribute="trailing" id="sZZ-8X-deB"/>
+                                                <constraint firstAttribute="bottom" secondItem="lgC-VF-k6V" secondAttribute="bottom" id="shl-NZ-Rn8"/>
+                                                <constraint firstItem="lgC-VF-k6V" firstAttribute="top" secondItem="jyQ-y1-Ftf" secondAttribute="top" id="wzU-is-Cum"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="tEd-ne-vhA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="67g-RT-AiG"/>
+                            <constraint firstItem="tEd-ne-vhA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="83j-m3-UFk"/>
+                            <constraint firstItem="tEd-ne-vhA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hv8-2w-WMo"/>
+                            <constraint firstItem="tEd-ne-vhA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kAQ-HC-0wj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="z7R-C3-FCK"/>
                 </viewController>
@@ -48,6 +120,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Emilia Clarke" width="237" height="212"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
