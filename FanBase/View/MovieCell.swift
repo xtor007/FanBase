@@ -15,6 +15,8 @@ class MovieCell: UITableViewCell {
     
     @IBOutlet weak var actorsCollection: UICollectionView!
     
+    var delegate : ViewOuputDelegate?
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,6 +48,10 @@ extension MovieCell: UICollectionViewDataSource, UICollectionViewDelegate {
         let cell = actorsCollection.dequeueReusableCell(withReuseIdentifier: actorCellId, for: indexPath) as! ActorCell
         cell.editData(actor: movie!.actors[indexPath.row].name)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate!.nextScreen(actor: movie!.actors[indexPath.row])
     }
     
 }

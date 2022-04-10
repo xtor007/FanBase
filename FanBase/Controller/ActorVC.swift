@@ -9,26 +9,23 @@ import UIKit
 
 class ActorVC: UIViewController {
     
-    
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var countryFlag: UIImageView!
     
+    var thisActor: Actor!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        editData(actor: thisActor)
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func editData(actor: Actor) {
+        navigationItem.title = actor.name
+        avatar.image = UIImage(named: actor.name)
+        age.text = "\(actor.birthYear)(\(actor.age))"
+        countryFlag.image = UIImage(named: actor.country)
     }
-    */
 
 }

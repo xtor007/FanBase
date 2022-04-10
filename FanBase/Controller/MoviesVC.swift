@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol  ViewOuputDelegate{
+    func nextScreen(actor: Actor)
+}
+
 class MoviesVC: UIViewController {
     
     private let movieCellId = "movieCellId"
+    
+    private var newActor: Actor?
     
     @IBOutlet weak var moviesTable: UITableView!
     
@@ -19,8 +25,14 @@ class MoviesVC: UIViewController {
         moviesTable.dataSource = self
         moviesTable.sectionIndexBackgroundColor = .green
     }
-
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let actorVC = segue.destination as? ActorVC {
+            if let newData = newActor {
+                actorVC.thisActor = newData
+            }
+        }
+    }
     
 }
 
@@ -46,6 +58,7 @@ extension MoviesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = moviesTable.dequeueReusableCell(withIdentifier: movieCellId, for: indexPath) as! MovieCell
+        cell.delegate = self
         cell.movie = DataService.data.allMovies[indexPath.section-1]
         cell.actorsCollection.reloadData()
         return cell
@@ -53,6 +66,15 @@ extension MoviesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 270
+    }
+    
+}
+
+extension MoviesVC: ViewOuputDelegate {
+    
+    func nextScreen(actor: Actor){
+        newActor = actor
+        performSegue(withIdentifier: "toActor", sender: nil)
     }
     
 }
